@@ -1,8 +1,5 @@
 { config, pkgs, ... }:
 
-let
-  userEnv = (import ../env.nix).krt;
-in
 {
   users.users.krt = {
     shell = pkgs.fish;

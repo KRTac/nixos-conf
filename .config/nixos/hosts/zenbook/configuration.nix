@@ -2,14 +2,13 @@
 
 let
   configRoot = ../..;
-  env = import ../../env.nix;
 in
 {
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = env.hostName;
+  networking.hostName = "krtTop";
 
   imports =
     [
