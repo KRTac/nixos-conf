@@ -33,5 +33,5 @@
     gnome-font-viewer
   ];
 
-  console.font = "ter-v16n";
+  console.font = "lat4-16";
 }
