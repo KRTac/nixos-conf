@@ -20,6 +20,7 @@
       googlesans-code
       roboto
       roboto-mono
+      montserrat
     ];
     fontconfig = {
       enable = true;
