@@ -28,5 +28,9 @@
     };
   };
 
+  environment.systemPackages = with pkgs; [
+    gnome-font-viewer
+  ];
+
   console.font = "Lat2-Terminus16";
 }
