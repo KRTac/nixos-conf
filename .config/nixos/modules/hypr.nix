@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   programs.hyprland.enable = true;
@@ -8,7 +8,7 @@
 
     settings = {
       initial_session = {
-        command = "start-hyprland";
+        command = "${lib.getExe' config.programs.hyprland.package "start-hyprland"}";
         user = "krt";
       };
     };
