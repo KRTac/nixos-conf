@@ -14,6 +14,7 @@ in
     [
       ./hardware-configuration.nix
       "${configRoot}/modules/common.nix"
+      "${configRoot}/modules/fonts.nix"
       "${configRoot}/modules/ssh.nix"
       "${configRoot}/users/root.nix"
       "${configRoot}/users/krt.nix"
@@ -39,4 +40,3 @@ in
   system.stateVersion = "26.05"; # Did you read the comment?
 
 }
-
