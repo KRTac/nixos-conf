@@ -11,6 +11,7 @@
         command = "${pkgs.hyprland}/bin/start-hyprland";
         user = "krt";
       };
+      default_session = initial_session;
     };
   };
 
