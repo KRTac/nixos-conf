@@ -12,11 +12,14 @@
         user = "krt";
       };
       default_session = {
-        command = "${pkgs.hyprland}/bin/start-hyprland";
+        command = "${lib.getExe' config.programs.hyprland.package "start-hyprland"}";
         user = "krt";
       };
     };
   };
+
+  programs.hyprlock.enable = true;
+  services.hypridle.enable = true;
 
   # hint Electron apps to use Wayland
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
