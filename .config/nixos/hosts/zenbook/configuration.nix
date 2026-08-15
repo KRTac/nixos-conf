@@ -10,6 +10,10 @@ in
 
   networking.hostName = "krtTop";
 
+  environment.systemPackages = with pkgs; [
+    brightnessctl
+  ];
+
   imports =
     [
       ./hardware-configuration.nix

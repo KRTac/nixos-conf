@@ -33,6 +33,7 @@
     git
     kitty
     stow
+    playerctl
   ];
 
   programs.mtr.enable = true;
