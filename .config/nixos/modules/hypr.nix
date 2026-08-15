@@ -11,7 +11,10 @@
         command = "${pkgs.hyprland}/bin/start-hyprland";
         user = "krt";
       };
-      default_session = initial_session;
+      default_session = {
+        command = "${pkgs.hyprland}/bin/start-hyprland";
+        user = "krt";
+      };
     };
   };
 
