@@ -26,7 +26,8 @@ in
       "${configRoot}/modules/ssh.nix"
       "${configRoot}/users/root.nix"
       "${configRoot}/users/krt.nix"
-      "${configRoot}/modules/hypr.nix"
+      # "${configRoot}/modules/hypr.nix"
+      "${configRoot}/modules/dmshell.nix"
     ];
 
   # This option defines the first version of NixOS you have installed on this particular machine,
