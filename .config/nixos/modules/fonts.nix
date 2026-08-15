@@ -33,5 +33,5 @@
     gnome-font-viewer
   ];
 
-  console.font = "lat4-16";
+  console.font = "Lat2-Terminus16";
 }
