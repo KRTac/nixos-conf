@@ -4,7 +4,13 @@
   users.users.krt = {
     shell = pkgs.fish;
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "disk"
+      "audio"
+      "video"
+    ];
 
     packages = with pkgs; [
       tree

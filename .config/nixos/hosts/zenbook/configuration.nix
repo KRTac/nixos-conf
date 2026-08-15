@@ -14,6 +14,10 @@ in
     brightnessctl
   ];
 
+  services.udev.extraRules = ''
+    ACTION=="add", SUBSYSTEM=="backlight", GROUP="video", MODE="0660"
+  '';
+
   imports =
     [
       ./hardware-configuration.nix
