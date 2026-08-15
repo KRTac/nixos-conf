@@ -10,6 +10,7 @@
       "disk"
       "audio"
       "video"
+      "input"
     ];
 
     packages = with pkgs; [
