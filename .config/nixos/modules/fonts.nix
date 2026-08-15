@@ -16,6 +16,7 @@
       nerd-fonts.proggy-clean-tt
       liberation_ttf
       nerd-fonts.sauce-code-pro
+      nerd-fonts.terminess-ttf
     ];
     fontconfig = {
       enable = true;
