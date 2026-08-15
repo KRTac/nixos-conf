@@ -8,7 +8,7 @@
 
     settings = {
       initial_session = {
-        command = "${lib.getExe' config.programs.hyprland.package "start-hyprland"}";
+        command = "${pkgs.hyprland}/bin/start-hyprland";
         user = "krt";
       };
     };
