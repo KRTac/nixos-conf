@@ -44,6 +44,7 @@
 
   boot.kernelParams = [
     "consoleblank=120"
+    "video=eDP-1:1920x1080@60"
   ];
 
   # programs.dconf.profiles.user.databases = [
