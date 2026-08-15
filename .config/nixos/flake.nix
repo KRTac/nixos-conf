@@ -1,4 +1,6 @@
 {
+  description = "NixOS config for the old Zenbook";
+
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };

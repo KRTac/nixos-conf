@@ -21,6 +21,7 @@
       roboto
       roboto-mono
       montserrat
+      terminus_font
     ];
     fontconfig = {
       enable = true;
@@ -32,5 +33,5 @@
     gnome-font-viewer
   ];
 
-  console.font = "Lat2-Terminus16";
+  console.font = "ter-v16n";
 }
