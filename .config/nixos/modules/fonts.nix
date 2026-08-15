@@ -18,6 +18,9 @@
       nerd-fonts.sauce-code-pro
       nerd-fonts.terminess-ttf
       googlesans-code
+      roboto
+      roboto-mono
+      google-fonts
     ];
     fontconfig = {
       enable = true;
