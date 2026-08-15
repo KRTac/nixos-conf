@@ -15,7 +15,7 @@ in
   ];
 
   services.udev.extraRules = ''
-    ACTION=="add", SUBSYSTEM=="backlight", GROUP="video", MODE="0660"
+    SUBSYSTEM=="backlight", GROUP="video", MODE="0660"
   '';
 
   imports =
