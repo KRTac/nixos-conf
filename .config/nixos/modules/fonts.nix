@@ -17,6 +17,7 @@
       liberation_ttf
       nerd-fonts.sauce-code-pro
       nerd-fonts.terminess-ttf
+      googlesans-code
     ];
     fontconfig = {
       enable = true;
