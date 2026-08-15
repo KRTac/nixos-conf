@@ -15,7 +15,7 @@ in
   ];
 
   services.udev.extraRules = ''
-    SUBSYSTEM=="backlight", GROUP="video", MODE="0660"
+    ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="intel_backlight", GROUP="video", MODE="0666", RUN+="${pkgs.coreutils}/bin/chmod a+w /sys/class/backlight/%k/brightness"
   '';
 
   imports =
