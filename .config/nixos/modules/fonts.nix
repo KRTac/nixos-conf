@@ -20,7 +20,6 @@
       googlesans-code
       roboto
       roboto-mono
-      google-fonts
     ];
     fontconfig = {
       enable = true;
