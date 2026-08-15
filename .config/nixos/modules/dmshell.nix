@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  programs.hyprland.enable = true;
+
   programs.dms-shell = {
     enable = true;
 
