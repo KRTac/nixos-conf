@@ -23,7 +23,7 @@
 
   programs.dms-shell = {
     enable = true;
-    quickshell.package = inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.quickshell;
+    quickshell.package = inputs.quickshell_git.packages.${pkgs.stdenv.hostPlatform.system}.quickshell;
 
     systemd = {
       enable = true;             # Systemd service for auto-start
