@@ -47,6 +47,7 @@
     kitty
     stow
     playerctl
+    bibata-cursors
   ];
 
   programs.mtr.enable = true;
