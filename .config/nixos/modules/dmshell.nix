@@ -1,6 +1,21 @@
 { config, pkgs, ... }:
 
 {
+  services.greetd = {
+    enable = true;
+
+    settings = {
+      initial_session = {
+        command = "uwsm start hyprland.desktop";
+        user = "krt";
+      };
+      default_session = {
+        command = "uwsm start hyprland.desktop";
+        user = "krt";
+      };
+    };
+  };
+
   programs.hyprland = {
     enable = true;
     withUWSM = true;
