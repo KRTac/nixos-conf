@@ -28,11 +28,14 @@
     cava
     khal
     cups-pk-helper
-
-    # fonts
-    inter
-    fira-code
   ];
+
+  fonts = {
+    packages = with pkgs; [
+      inter
+      fira-code
+    ];
+  };
 
   environment.sessionVariables = {
     XDG_MENU_PREFIX = "plasma-";
