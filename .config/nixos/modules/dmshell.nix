@@ -27,5 +27,14 @@
     matugen
     cava
     khal
+    cups-pk-helper
+
+    # fonts
+    inter
+    fira-code
   ];
+
+  environment.sessionVariables = {
+    XDG_MENU_PREFIX = "plasma-";
+  };
 }
