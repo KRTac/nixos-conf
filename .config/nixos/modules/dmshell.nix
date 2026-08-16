@@ -55,5 +55,8 @@
 
   environment.sessionVariables = {
     XDG_MENU_PREFIX = "plasma-";
+
+    # hint Electron apps to use Wayland
+    NIXOS_OZONE_WL = "1";
   };
 }
