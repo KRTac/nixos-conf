@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, ... }:
 
 {
   services.greetd = {
@@ -23,7 +23,6 @@
 
   programs.dms-shell = {
     enable = true;
-    quickshell.package = inputs.quickshell_git.packages.${pkgs.stdenv.hostPlatform.system}.quickshell;
 
     systemd = {
       enable = true;             # Systemd service for auto-start
@@ -44,6 +43,7 @@
     cava
     khal
     cups-pk-helper
+    kdePackages.plasma-workspace
   ];
 
   fonts = {
