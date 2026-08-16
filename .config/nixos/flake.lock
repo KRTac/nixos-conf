@@ -16,7 +16,7 @@
         "type": "github"
       }
     },
-    "quickshell": {
+    "quickshell_git": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
@@ -39,7 +39,7 @@
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "quickshell": "quickshell"
+        "quickshell_git": "quickshell_git"
       }
     }
   },
