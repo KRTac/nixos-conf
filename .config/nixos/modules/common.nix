@@ -18,6 +18,7 @@
   };
 
   services.libinput.enable = true;
+  services.power-profiles-daemon.enable
 
   programs.firefox.enable = true;
 
