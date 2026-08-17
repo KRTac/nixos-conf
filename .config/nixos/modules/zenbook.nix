@@ -17,18 +17,17 @@
     powerOnBoot = true;
   };
 
-  # nixpkgs.config.allowUnfree = true;
-  # services.xserver.videoDrivers = [ "modesetting" "nvidia" ];
-  # hardware.graphics.enable = true;
-  # hardware.nvidia = {
-  #   open = false;
-  #   modesetting.enable = true;
-  #   nvidiaSettings = true;
-  #   prime = {
-  #     offload.enable = true;
-  #     intelBusId = "PCI:0@0:2:0";
-  #     nvidiaBusId = "PCI:1@0:0:0";
-  #   };
-  #   package = config.boot.kernelPackages.nvidiaPackages.stable;
-  # };
+  nixpkgs.config.allowUnfree = true;
+  services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.graphics.enable = true;
+  hardware.nvidia = {
+    open = false;
+    branch = "legacy_580";
+    modesetting.enable = true;
+    nvidiaSettings = true;
+    prime = {
+      intelBusId = "PCI:0@0:2:0";
+      nvidiaBusId = "PCI:1@0:0:0";
+    };
+  };
 }
