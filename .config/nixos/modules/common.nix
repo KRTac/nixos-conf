@@ -33,9 +33,15 @@
     keyMap = "croat";
   };
 
+  security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
     pulse.enable = true;
+  };
+
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
   };
 
   services.libinput.enable = true;
