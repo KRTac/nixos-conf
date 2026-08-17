@@ -39,11 +39,6 @@
     pulse.enable = true;
   };
 
-  hardware.bluetooth = {
-    enable = true;
-    powerOnBoot = true;
-  };
-
   services.libinput.enable = true;
 
   services.power-profiles-daemon.enable = true;

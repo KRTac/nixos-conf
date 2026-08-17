@@ -15,4 +15,9 @@
     tapping = true;
     naturalScrolling = true;
   };
+
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
 }
