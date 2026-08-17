@@ -59,6 +59,7 @@
     stow
     playerctl
     bibata-cursors
+    libnotify
   ];
 
   programs.mtr.enable = true;
