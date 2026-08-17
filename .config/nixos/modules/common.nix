@@ -21,6 +21,14 @@
     LC_TIME = "hr_HR.UTF-8";
     LC_COLLATE = "hr_HR.UTF-8";
   };
+  services.xserver.xkb = {
+    layout = "hr";
+    variant = ",";
+  };
+  environment.sessionVariables = {
+    XKB_DEFAULT_LAYOUT = "hr";
+    XKB_DEFAULT_VARIANT = ",";
+  };
   console = {
     keyMap = "croat";
   };
