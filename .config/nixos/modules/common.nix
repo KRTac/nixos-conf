@@ -46,6 +46,7 @@
   environment.systemPackages = with pkgs; [
     git
     kitty
+    ghostty
     stow
     playerctl
     bibata-cursors
