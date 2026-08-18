@@ -1,5 +1,3 @@
-{ config, pkgs, ... }:
-
 let
   configRoot = ../..;
 in
@@ -14,6 +12,8 @@ in
       ./hardware-configuration.nix
       "${configRoot}/modules/common.nix"
       "${configRoot}/modules/fonts.nix"
+      "${configRoot}/modules/packages.nix"
+      "${configRoot}/modules/regional.nix"
       "${configRoot}/modules/ssh.nix"
       "${configRoot}/modules/zenbook.nix"
       "${configRoot}/users/root.nix"
