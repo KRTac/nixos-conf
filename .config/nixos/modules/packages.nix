@@ -15,7 +15,6 @@
     tumbler
     gdk-pixbuf
     ffmpeg
-    ffmpeg-headless
     ffmpegthumbnailer
     nautilus
     code-nautilus
