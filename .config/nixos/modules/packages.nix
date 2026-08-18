@@ -10,6 +10,8 @@
     bibata-cursors
     libnotify
     nixd
+    nixfmt
+    qt6.qtdeclarative
     vscode
     adw-gtk3
     tumbler

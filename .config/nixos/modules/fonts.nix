@@ -23,6 +23,7 @@
       montserrat
       terminus_font
       nerd-fonts.jetbrains-mono
+      font-awesome
     ];
     fontconfig = {
       enable = true;
