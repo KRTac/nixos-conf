@@ -13,10 +13,17 @@
     vscode
     adw-gtk3
     tumbler
-    ffmpegthumbnailer
+    gdk-pixbuf
     ffmpeg
+    ffmpeg-headless
+    ffmpegthumbnailer
+    nautilus
+    code-nautilus
     libpng
     libjpeg
-    nautilus
+    libheif
+    libavif
+    libjxl
+    webp-pixbuf-loader
   ];
 }

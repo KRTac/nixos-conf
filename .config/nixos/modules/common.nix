@@ -31,4 +31,10 @@
   boot.kernelParams = [
     "consoleblank=120"
   ];
+
+  environment.pathsToLink = [
+    "share/thumbnailers"
+  ];
+
+  services.gvfs.enable = true;
 }

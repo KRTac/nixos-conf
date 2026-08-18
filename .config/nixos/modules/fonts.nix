@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   fonts = {
@@ -22,6 +22,7 @@
       roboto-mono
       montserrat
       terminus_font
+      nerd-fonts.jetbrains-mono
     ];
     fontconfig = {
       enable = true;
