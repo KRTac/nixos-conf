@@ -43,8 +43,6 @@
     cava
     khal
     cups-pk-helper
-    kdePackages.plasma-workspaces
-    xdg-desktop-portal-hyprland
   ];
 
   fonts = {
@@ -52,6 +50,11 @@
       inter
       fira-code
     ];
+  };
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [ xdg-desktop-portal-hyprland ];
   };
 
   environment.sessionVariables = {
