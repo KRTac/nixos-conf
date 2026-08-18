@@ -23,6 +23,7 @@
 
   environment.systemPackages = with pkgs; [
     hyprpaper
+    xdg-desktop-portal-hyprland
   ];
 
   environment.sessionVariables = {

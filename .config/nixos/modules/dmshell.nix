@@ -43,7 +43,8 @@
     cava
     khal
     cups-pk-helper
-    kdePackages.plasma-workspace
+    kdePackages.plasma-workspaces
+    xdg-desktop-portal-hyprland
   ];
 
   fonts = {
