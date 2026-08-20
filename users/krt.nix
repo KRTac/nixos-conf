@@ -24,7 +24,7 @@
     serviceConfig = {
       User = "krt";
       Type = "oneshot";
-      ExecStart = "/home/krt/config/dotfiles/scripts/nos.sh auto-update";
+      ExecStart = "/home/krt/configs/dotfiles/scripts/nos.sh auto-update";
     };
   };
 
