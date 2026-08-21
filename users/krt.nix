@@ -31,7 +31,7 @@
   systemd.user.timers.nos-auto-update = {
     wantedBy = [ "timers.target" ];
     timerConfig = {
-      OnUnitInactiveSec = "30s";
+      OnUnitInactiveSec = "30m";
     };
   };
 }
