@@ -19,6 +19,7 @@
   };
 
   systemd.user.services.nos-auto-update = {
+    enable = false;
     description = "nos auto update service";
     wantedBy = [ "default.target" ];
     serviceConfig = {
