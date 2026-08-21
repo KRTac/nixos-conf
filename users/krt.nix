@@ -36,4 +36,8 @@
       OnUnitInactiveSec = "30m";
     };
   };
+
+  environment.extraInit = ''
+    export PATH="$HOME/configs/dotfiles/scripts:$PATH"
+  '';
 }
