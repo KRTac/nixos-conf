@@ -27,8 +27,8 @@
     modesetting.enable = true;
     nvidiaSettings = true;
     prime = {
-      offload.enable = false;
-      reverseSync.enable = true;
+      offload.enable = true;
+      reverseSync.enable = false;
       intelBusId = "PCI:0@0:2:0";
       nvidiaBusId = "PCI:1@0:0:0";
     };
