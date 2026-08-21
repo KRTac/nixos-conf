@@ -21,6 +21,8 @@
   systemd.user.services.nos-auto-update = {
     description = "nos auto update service";
     wantedBy = [ "default.target" ];
+    wants = [ "network-online.target" ];
+    after = [ "network-online.target" ];
     serviceConfig = {
       User = "krt";
       Type = "oneshot";
