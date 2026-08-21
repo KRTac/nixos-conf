@@ -19,11 +19,8 @@
   };
 
   systemd.user.services.nos-auto-update = {
-    enable = false;
     description = "nos auto update service";
     wantedBy = [ "default.target" ];
-    wants = [ "network-online.target" ];
-    after = [ "network-online.target" ];
     serviceConfig = {
       User = "krt";
       Type = "oneshot";
@@ -32,9 +29,8 @@
   };
 
   systemd.user.timers.nos-auto-update = {
+    enable = false;
     wantedBy = [ "timers.target" ];
-    wants = [ "network-online.target" ];
-    after = [ "network-online.target" ];
     timerConfig = {
       OnUnitInactiveSec = "30m";
     };
