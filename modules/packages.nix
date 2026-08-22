@@ -26,5 +26,6 @@
     libavif
     libjxl
     webp-pixbuf-loader
+    wev
   ];
 }
