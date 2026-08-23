@@ -3,12 +3,20 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    hyprmod = {
+      url = "github:BlueManCZ/hyprmod";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs@{ self, nixpkgs, ... }: {
+  outputs = inputs@{ self, nixpkgs, hyprmod, ... }: {
     nixosConfigurations.zenbook = nixpkgs.lib.nixosSystem {
-      modules = [ ./hosts/zenbook/configuration.nix ];
+      specialArgs = { inherit inputs; };
+      modules = [
+        { nixpkgs.overlays = [ hyprmod.overlays.default ]; }
+        ./hosts/zenbook/configuration.nix
+      ];
     };
   };
 }
-

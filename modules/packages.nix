@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -26,6 +26,6 @@
     libavif
     libjxl
     webp-pixbuf-loader
-    wev
+    inputs.hyprmod.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
