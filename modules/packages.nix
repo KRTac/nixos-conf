@@ -27,5 +27,6 @@
     libjxl
     webp-pixbuf-loader
     inputs.hyprmod.packages.${pkgs.stdenv.hostPlatform.system}.default
+    discord
   ];
 }
