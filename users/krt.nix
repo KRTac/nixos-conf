@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{ pkgs, ... }: {
   users.users.krt = {
     shell = pkgs.fish;
     isNormalUser = true;
