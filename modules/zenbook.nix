@@ -2,6 +2,7 @@
   environment.variables.NOS_BUILD_HOSTNAME = "zenbook";
   environment.systemPackages = with pkgs; [
     brightnessctl
+    hyprshutdown
   ];
 
   services.libinput.touchpad = {
