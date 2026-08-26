@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   users.users.krt = {
+    initialPassword = "12345";
     shell = pkgs.fish;
     isNormalUser = true;
     extraGroups = [

@@ -43,6 +43,7 @@
     cava
     khal
     cups-pk-helper
+    hyprshutdown
   ];
 
   fonts = {
