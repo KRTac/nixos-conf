@@ -1,25 +1,5 @@
 {
   "nodes": {
-    "hyprmod": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1787208859,
-        "narHash": "sha256-f8ygnyOlwXGfM31+GB+B8y7TYDShyzHKuPo1ww+uxtQ=",
-        "owner": "BlueManCZ",
-        "repo": "hyprmod",
-        "rev": "bf5b55a9a89d7eab5a6d6947743de9dcb1cacd4a",
-        "type": "github"
-      },
-      "original": {
-        "owner": "BlueManCZ",
-        "repo": "hyprmod",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1786599213,
@@ -38,7 +18,6 @@
     },
     "root": {
       "inputs": {
-        "hyprmod": "hyprmod",
         "nixpkgs": "nixpkgs"
       }
     }

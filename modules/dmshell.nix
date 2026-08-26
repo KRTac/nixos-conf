@@ -1,7 +1,10 @@
 { pkgs, ... }: {
+  programs.uwsm = {
+    enable = true;
+  };
+
   services.greetd = {
     enable = true;
-
     settings = {
       initial_session = {
         command = "uwsm start hyprland.desktop";
@@ -23,8 +26,7 @@
     enable = true;
 
     systemd = {
-      enable = true;             # Systemd service for auto-start
-      restartIfChanged = true;   # Auto-restart dms.service when dms-shell changes
+      enable = false;
     };
 
     # Core features
