@@ -10,20 +10,18 @@
     nixd
     nixfmt
     qt6.qtdeclarative
-    vscode
     adw-gtk3
     tumbler
     gdk-pixbuf
     ffmpeg
     ffmpegthumbnailer
     nautilus
-    code-nautilus
     libpng
     libjpeg
     libheif
     libavif
     libjxl
     webp-pixbuf-loader
-    discord
+    tree
   ];
 }

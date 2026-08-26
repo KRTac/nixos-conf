@@ -14,7 +14,6 @@ in
       "${configRoot}/modules/fonts.nix"
       "${configRoot}/modules/packages.nix"
       "${configRoot}/modules/regional.nix"
-      "${configRoot}/modules/ssh.nix"
       "${configRoot}/modules/zenbook.nix"
       "${configRoot}/users/root.nix"
       "${configRoot}/users/krt.nix"

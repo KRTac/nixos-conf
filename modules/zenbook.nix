@@ -32,4 +32,19 @@
       nvidiaBusId = "PCI:1@0:0:0";
     };
   };
+
+  boot.kernelParams = [
+    "nvidia-drm.modeset=1"
+    "nvidia-drm.fbdev=0"
+  ];
+
+  services.openssh = {
+    enable = true;
+    openFirewall = true;
+    settings = {
+      PasswordAuthentication = false;
+      PermitRootLogin = "no";
+      MaxAuthTries = 3;
+    };
+  };
 }

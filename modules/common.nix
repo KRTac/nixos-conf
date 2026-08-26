@@ -13,8 +13,6 @@
 
   services.power-profiles-daemon.enable = true;
 
-  programs.firefox.enable = true;
-
   programs.fish = {
     enable = true;
     interactiveShellInit = ''
