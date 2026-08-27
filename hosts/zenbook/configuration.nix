@@ -9,6 +9,8 @@ in
 
   imports = [
     ./hardware-configuration.nix
+    "${builtins.fetchTarball "https://github.com/nix-community/disko/archive/master.tar.gz"}/module.nix"
+    ./disko-config.nix
     "${configRoot}/modules/common.nix"
     "${configRoot}/modules/fonts.nix"
     "${configRoot}/modules/packages.nix"
