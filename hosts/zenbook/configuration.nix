@@ -1,3 +1,4 @@
+{ inputs, ... }:
 let
   configRoot = ../..;
 in
@@ -8,6 +9,8 @@ in
   networking.hostName = "krtTop";
 
   imports = [
+    inputs.disko.nixosModules.disko
+    ./disko-config.nix
     ./hardware-configuration.nix
     "${configRoot}/modules/common.nix"
     "${configRoot}/modules/fonts.nix"
