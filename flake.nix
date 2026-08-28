@@ -9,9 +9,18 @@
     disko.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ self, nixpkgs, ... }: {
+  outputs = inputs@{ self, nixpkgs, nixpkgs-unstable, ... }:
+  let
+    unstable = import nixpkgs-unstable {
+      system = "x86_64-linux";
+      config.allowUnfree = true;
+    };
+  in {
     nixosConfigurations.zenbook = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs; };
+      specialArgs = {
+        inherit inputs;
+        inherit unstable;
+      };
       modules = [
         ./hosts/zenbook/configuration.nix
       ];

@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, unstable, ... }: {
   programs.uwsm = {
     enable = true;
   };
@@ -24,6 +24,8 @@
 
   programs.dms-shell = {
     enable = true;
+    package = unstable.dms-shell;
+    quickshell.package = unstable.quickshell;
 
     systemd = {
       enable = false;
