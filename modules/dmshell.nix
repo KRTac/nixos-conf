@@ -44,6 +44,8 @@
     khal
     cups-pk-helper
     hyprshutdown
+    adw-gtk3
+    qt6Packages.qt6ct
   ];
 
   fonts = {
