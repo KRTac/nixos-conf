@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ pkgs, ... }: {
   users.users.krt = {
     initialPassword = "12345";
     shell = pkgs.fish;
@@ -15,16 +15,11 @@
 
   programs.firefox.enable = true;
 
-  home-manager.users.krt = {
+  home-manager.users.krt = { config, ... }: {
     home.stateVersion = "26.11";
 
-    programs.fish = {
-      enable = true;
-    };
-
-    programs.bash = {
-      enable = true;
-    };
+    programs.fish.enable = true;
+    programs.bash.enable = true;
 
     home.packages = with pkgs; [
       bat
@@ -34,7 +29,7 @@
     ];
 
     home.sessionPath = [
-      "/home/krt/configs/dotfiles/scripts"
+      "${config.home.homeDirectory}/configs/dotfiles/scripts"
     ];
   };
 }
