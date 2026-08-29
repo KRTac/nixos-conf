@@ -7,6 +7,9 @@
 
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs-stable";
+
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs = inputs@{ self, nixpkgs, nixpkgs-stable, ... }:
@@ -18,8 +21,7 @@
   in {
     nixosConfigurations.zenbook = nixpkgs.lib.nixosSystem {
       specialArgs = {
-        inherit inputs;
-        inherit stable;
+        inherit inputs stable;
       };
       modules = [
         ./hosts/zenbook/configuration.nix

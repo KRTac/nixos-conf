@@ -11,17 +11,22 @@
       "video"
       "input"
     ];
-
-    packages = with pkgs; [
-      vscode
-      discord
-      code-nautilus
-    ];
   };
 
   programs.firefox.enable = true;
 
-  environment.extraInit = ''
-    export PATH="$HOME/configs/dotfiles/scripts:$PATH"
-  '';
+  home-manager.users.krt = {
+    home.stateVersion = "26.11";
+
+    home.packages = with pkgs; [
+      bat
+      vscode
+      discord
+      code-nautilus
+    ];
+
+    home.sessionPath = [
+      "$HOME/configs/dotfiles/scripts"
+    ];
+  };
 }

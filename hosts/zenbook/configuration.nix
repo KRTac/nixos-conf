@@ -9,9 +9,21 @@ in
   networking.hostName = "krtTop";
 
   imports = [
+    ./hardware-configuration.nix
+
     inputs.disko.nixosModules.disko
     ./disko-config.nix
-    ./hardware-configuration.nix
+
+    inputs.home-manager.nixosModules.home-manager
+    {
+      home-manager.useUserPackages = true;
+      home-manager.backupFileExtension = "hm-bkp";
+      home-manager.overwriteBackup = true;
+      home-manager.extraSpecialArgs = {
+        inherit inputs;
+      };
+    }
+
     "${configRoot}/modules/common.nix"
     "${configRoot}/modules/fonts.nix"
     "${configRoot}/modules/packages.nix"
