@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ config, pkgs, ... }: {
   users.users.krt = {
     initialPassword = "12345";
     shell = pkgs.fish;
@@ -18,6 +18,14 @@
   home-manager.users.krt = {
     home.stateVersion = "26.11";
 
+    programs.fish = {
+      enable = true;
+    };
+
+    programs.bash = {
+      enable = true;
+    };
+
     home.packages = with pkgs; [
       bat
       vscode
@@ -26,7 +34,7 @@
     ];
 
     home.sessionPath = [
-      "$HOME/configs/dotfiles/scripts"
+      "/home/krt/configs/dotfiles/scripts"
     ];
   };
 }
