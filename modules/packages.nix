@@ -23,5 +23,6 @@
     libjxl
     webp-pixbuf-loader
     tree
+    qbittorrent
   ];
 }
