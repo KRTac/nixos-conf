@@ -24,5 +24,6 @@
     webp-pixbuf-loader
     tree
     qbittorrent
+    vlc
   ];
 }
