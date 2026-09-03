@@ -27,5 +27,13 @@
         ./hosts/zenbook/configuration.nix
       ];
     };
+    nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
+      specialArgs = {
+        inherit inputs stable;
+      };
+      modules = [
+        ./hosts/pc/configuration.nix
+      ];
+    };
   };
 }
